@@ -1,0 +1,24 @@
+{
+  "name": "ujst-tdd",
+  "version": "1.0.0",
+  "description": "Biblioteca de TDD do curso da Udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougtq/ujst-tdd.git"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "tdd"
+  ],
+  "author": "Douglas Alves <douglas.expalves@gmail.com> (https://dougtq.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dougtq/ujst-tdd/issues"
+  },
+  "homepage": "https://github.com/dougtq/ujst-tdd#readme"
+}
