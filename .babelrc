@@ -1,12 +1,11 @@
 {
   "presets": [
-    "env",
-    "node8-es6"
+    "env"
   ],
   "plugins": [
-    "transform-decorators-legacy",
-    "syntax-async-functions",
-    "transform-regenerator"
+    // "transform-decorators-legacy",
+    // "syntax-async-functions",
+    // "transform-regenerator"
   ],
   "comments": false
 }
