@@ -4,11 +4,19 @@
   "description": "Biblioteca de TDD do curso da Udemy",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=spec --bail",
-    "test:live": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=spec --bail --watch",
-    "precommit": "yarn lint",
-    "prepush": "yarn lint",
-    "lint": "./node_modules/.bin/eslint src/**/*.js"
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=spec --require babel-register --bail",
+    "test:live": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=spec --bail --require babel-register --watch",
+    "test:coverage": "nyc yarn test",
+    "precommit": "yarn lint && yarn test:coverage",
+    "prepush": "yarn lint"
+  },
+  "nyc": {
+    "functions": 80,
+    "lines": 80,
+    "check-coverage": true,
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
   },
   "repository": {
     "type": "git",
@@ -44,6 +52,10 @@
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.3",
     "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
     "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "babel-register": "^6.26.0"
   }
 }
