@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "env",
+    "node8-es6"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "syntax-async-functions",
+    "transform-regenerator"
+  ],
+  "comments": false
+}

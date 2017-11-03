@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=spec --bail",
+    "test:live": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=spec --bail --watch",
     "precommit": "yarn lint",
     "prepush": "yarn lint",
     "lint": "./node_modules/.bin/eslint src/**/*.js"
@@ -25,6 +26,15 @@
   },
   "homepage": "https://github.com/dougtq/ujst-tdd#readme",
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-node8-es6": "^12.0.0",
+    "babel-watch": "^2.0.7",
     "chai": "^4.1.2",
     "eslint": "^4.10.0",
     "eslint-config-standard": "^10.2.1",
