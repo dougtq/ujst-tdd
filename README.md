@@ -1,6 +1,7 @@
 # UJST-TDD
+[![Build Status](https://travis-ci.org/dougtq/ujst-tdd.svg?branch=master)](https://travis-ci.org/dougtq/ujst-tdd)
 
-One Paragraph of project description goes here
+Projeto baseado no curso de TDD Javascript da Udemy
 
 ## Getting Started
 
