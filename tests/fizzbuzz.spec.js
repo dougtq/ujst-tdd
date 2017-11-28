@@ -2,7 +2,6 @@ import { expect } from 'chai'
 import { FizzBuzz } from '../src/FizzBuzz'
 
 describe('Main Fizzbuzz', () => {
-
   it('Should return 0 if can be divided by 0', () => {
     expect(FizzBuzz(0)).to.be.equal(0)
   })
