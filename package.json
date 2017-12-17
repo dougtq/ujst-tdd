@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/**/*.js",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=spec --require babel-register --bail",
-    "test:live": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=spec --bail --require babel-register --watch",
+    "test:live": "yarn test -- --watch",
     "test:coverage": "nyc yarn test"
   },
   "nyc": {
@@ -28,7 +28,10 @@
   "keywords": [
     "js",
     "node",
-    "tdd"
+    "tdd",
+    "spotify",
+    "btc",
+    "converter"
   ],
   "author": "Douglas Alves <douglas.expalves@gmail.com> (https://dougtq.github.io/)",
   "license": "MIT",
