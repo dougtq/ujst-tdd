@@ -1,6 +1,5 @@
-global.fetch = require('node-fetch')
-
 import { searchArtist } from '../spotify/'
+global.fetch = require('node-fetch')
 
 let data = searchArtist('Kanye')
 
