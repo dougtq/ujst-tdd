@@ -1,5 +1,6 @@
 # UJST-TDD
 [![Build Status](https://travis-ci.org/dougtq/ujst-tdd.svg?branch=master)](https://travis-ci.org/dougtq/ujst-tdd)
+[![Coverage Status](https://coveralls.io/repos/github/dougtq/ujst-tdd/badge.svg?branch=master)](https://coveralls.io/github/dougtq/ujst-tdd?branch=master)
 
 Projeto baseado no curso de TDD Javascript da Udemy
 
